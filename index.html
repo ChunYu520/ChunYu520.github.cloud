@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>存储引导</title>
+    <title>公共云盘</title>
     <link rel="icon" href="https://img1.imgtp.com/2023/07/10/EMAJysle.png"/>
 
     <link rel="stylesheet" href="in.css">
@@ -16,14 +16,14 @@
       //这个变量存储你想要的密码
       var password = "20080529";
       //这个变量存储用户输入的密码
-      var input = prompt("要不？输一下密码？");
+      var input = prompt("唔？要不输了密码？");
       //这个条件判断用户输入的密码是否正确
       if (input == password) {
         //如果正确，就打开图库链接
         window.open("https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EkmChO8LbwZCg7O6LUxlq7UBeNEzJD2TF54lWOKRYU9HkQ");
       } else {
         //如果错误，就弹出警告信息
-        alert("啊哦,不对哦");
+        alert("咦？好像不对哦...");
       }
     }
     </script>
@@ -34,11 +34,11 @@
     <div class="main">
         <div class="background">
             <div class="index">
-                <p class="title">欢迎进入-储存引导页面</p>
+                <p class="title">欢迎进入-云盘引导页面</p>
                 <div class="link">
                     <!--这是一个图库链接，需要密码，所以加了一个onclick属性，调用checkPassword函数-->
                     <!--这里加了一个target属性，设置为"_blank"-->
-                    <a href="#" onclick="checkPassword()" class="login">图库</a>
+                    <a href="#" onclick="checkPassword()" class="login" target="_blank">图库</a>
                     <!--其他的链接也加上target属性-->
                     <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EgW5-Y9cw3tBiO5IObslR6wBQX4VYUYYy5swbfDopzhv9g" class="register" target="_blank">ISO</a>
                     <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/Ej-_JJrjdBdKpFQz-I6wtZkBp-ivmjggppGK8wm-4mWq7Q" class="docx" target="_blank">文档</a>
