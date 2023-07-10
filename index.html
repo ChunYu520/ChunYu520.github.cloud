@@ -16,14 +16,14 @@
       //这个变量存储你想要的密码
       var password = "20080529";
       //这个变量存储用户输入的密码
-      var input = prompt("请输入密码");
+      var input = prompt("要不？输一下密码？");
       //这个条件判断用户输入的密码是否正确
       if (input == password) {
         //如果正确，就打开图库链接
         window.open("https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EkmChO8LbwZCg7O6LUxlq7UBeNEzJD2TF54lWOKRYU9HkQ");
       } else {
         //如果错误，就弹出警告信息
-        alert("密码错误");
+        alert("啊哦,不对哦");
       }
     }
     </script>
@@ -37,10 +37,12 @@
                 <p class="title">欢迎进入-储存引导页面</p>
                 <div class="link">
                     <!--这是一个图库链接，需要密码，所以加了一个onclick属性，调用checkPassword函数-->
-                    <a href="#" onclick="checkPassword()" class="login">图库</a>
-                    <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EgW5-Y9cw3tBiO5IObslR6wBQX4VYUYYy5swbfDopzhv9g" class="register">ISO</a>
-                    <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/Ej-_JJrjdBdKpFQz-I6wtZkBp-ivmjggppGK8wm-4mWq7Q" class="docx">文档</a>
-                    <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EjzusXDG2FdDrSsmEcdcknUBOQTVC2i1leulTa1oFw63bg" class="foamrain">其他</a>
+                    <!--这里加了一个target属性，设置为"_blank"-->
+                    <a href="#" onclick="checkPassword()" class="login" target="_blank">图库</a>
+                    <!--其他的链接也加上target属性-->
+                    <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EgW5-Y9cw3tBiO5IObslR6wBQX4VYUYYy5swbfDopzhv9g" class="register" target="_blank">ISO</a>
+                    <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/Ej-_JJrjdBdKpFQz-I6wtZkBp-ivmjggppGK8wm-4mWq7Q" class="docx" target="_blank">文档</a>
+                    <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EjzusXDG2FdDrSsmEcdcknUBOQTVC2i1leulTa1oFw63bg" class="foamrain" target="_blank">其他</a>
                 </div>
             </div>
         </div>
