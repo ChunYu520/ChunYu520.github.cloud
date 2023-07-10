@@ -10,6 +10,23 @@
     <link rel="icon" href="https://img1.imgtp.com/2023/07/10/EMAJysle.png"/>
 
     <link rel="stylesheet" href="in.css">
+    <script>
+    //这个函数会在点击图库链接时触发
+    function checkPassword() {
+      //这个变量存储你想要的密码
+      var password = "123456";
+      //这个变量存储用户输入的密码
+      var input = prompt("请输入密码");
+      //这个条件判断用户输入的密码是否正确
+      if (input == password) {
+        //如果正确，就打开图库链接
+        window.open("https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EkmChO8LbwZCg7O6LUxlq7UBeNEzJD2TF54lWOKRYU9HkQ");
+      } else {
+        //如果错误，就弹出警告信息
+        alert("密码错误");
+      }
+    }
+    </script>
 </head>
 
 
@@ -19,7 +36,8 @@
             <div class="index">
                 <p class="title">欢迎进入-储存引导页面</p>
                 <div class="link">
-                    <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EkmChO8LbwZCg7O6LUxlq7UBeNEzJD2TF54lWOKRYU9HkQ" class="login">图库</a>
+                    <!--这是一个图库链接，需要密码，所以加了一个onclick属性，调用checkPassword函数-->
+                    <a href="#" onclick="checkPassword()" class="login">图库</a>
                     <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EgW5-Y9cw3tBiO5IObslR6wBQX4VYUYYy5swbfDopzhv9g" class="register">ISO</a>
                     <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/Ej-_JJrjdBdKpFQz-I6wtZkBp-ivmjggppGK8wm-4mWq7Q" class="docx">文档</a>
                     <a href="https://zqsb6-my.sharepoint.com/:f:/g/personal/chunyu_zqsb6_onmicrosoft_com/EjzusXDG2FdDrSsmEcdcknUBOQTVC2i1leulTa1oFw63bg" class="foamrain">其他</a>
